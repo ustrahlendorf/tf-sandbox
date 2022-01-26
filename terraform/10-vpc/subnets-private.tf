@@ -6,7 +6,7 @@ resource "aws_subnet" "private" {
   map_public_ip_on_launch = false
 
   tags = {
-    Name = "${var.base_name}-private-${count.index}"
+    Name = "${var.base_name}-privSub-${trimprefix( "${element(data.aws_availability_zones.current.names, count.index)}" ,"${data.aws_region.current.name}")}"
     tier = "private"
   }
 }

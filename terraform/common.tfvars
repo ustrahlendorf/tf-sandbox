@@ -1,2 +1,3 @@
-team_name = "some_team_name"
-app_name  = "some_app_name"
+#team_name = "some_team_name"
+#app_name  = "some_app_name"
+base_name = "Ipta-Dev"
