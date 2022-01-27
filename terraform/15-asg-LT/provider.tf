@@ -10,7 +10,7 @@ required_version = ">=0.15.0"
   }
   backend "s3" {
       bucket = "ipta-dev-tf-state-store"
-      key    = "dev/tf-state-0021.tfstate"
+      key    = "dev/tf-state-0015.tfstate"
       region = "eu-central-1"
   }
 }
