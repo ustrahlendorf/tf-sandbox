@@ -1,7 +1,7 @@
 variable "base_name" {
-  type    = string
+  type = string
 }
 
 #variable "my_ip_cidr" {
-#  type    = string
+#  type = string
 #}

@@ -5,6 +5,7 @@ data "aws_region" "current" {}
 data "aws_iam_instance_profile" "this" {
   name = "SSMforEC2Role"
 }
+
 data "aws_vpc" "this" {
   tags = {
     Name = var.base_name
@@ -27,8 +28,7 @@ data "aws_subnet_ids" "public" {
 
 data "aws_ami" "amazon_linux_2" {
   most_recent = true
-  owners = ["amazon"]
-
+  owners      = ["amazon"]
   filter {
     name   = "name"
     values = ["amzn2-ami-hvm-*-x86_64-ebs"]
